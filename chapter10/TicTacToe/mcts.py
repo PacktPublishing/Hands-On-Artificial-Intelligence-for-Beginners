@@ -14,7 +14,7 @@ class GameTree:
         self.state = s
         self.player = MCTS.current_player(s)
         self.uct = float('inf')
-        self.result = MCTS.is_terminal(s)
+        self.result = MCTS.terminal(s)
 
     def __repr__(self):
         ratio = self.r / (self.n + 1)
@@ -74,20 +74,20 @@ class MCTS:
             return selected
 
     def expand_node(self, node):
-        if self.is_terminal(node.state) == 0:
+        if self.terminal(node.state) == 0:
             actions = self.available_move(node.state)
             for a in actions:
                 state_after_action = self.action_result(node.state, a)
                 node.child.append(GameTree(state_after_action, node, a))
 
     def simulation(self, s):
-        if self.is_terminal(s) == 0:
+        if self.terminal(s) == 0:
             actions = self.available_move(s)
             a = rndchoice(actions)
             s = self.action_result(s, a)
             return s
         else:
-            return self.is_terminal(s)
+            return self.terminal(s)
 
     def backpropagation(self, node, v):
         node.update(v)
@@ -95,7 +95,7 @@ class MCTS:
             self.backpropagation(node.parent, v)
 
     @staticmethod
-    def is_terminal(s):
+    def terminal(s):
         for wc in TicTacToe().winning_cases:
             if s[wc[0]] != '_' and \
                     s[wc[0]] == s[wc[1]] and \
@@ -133,7 +133,7 @@ class MCTS:
 
     @staticmethod
     def uct(node):
-        v = node.r / (node.n + 1e-12) + sqrt(2 * log(node.parent.n + 1) / (node.n + 1e-12))
+        v = (node.r / (node.n + 1e-12)) + sqrt(2 * log(node.parent.n + 1) / (node.n + 1e-12))
         return v
 
 
