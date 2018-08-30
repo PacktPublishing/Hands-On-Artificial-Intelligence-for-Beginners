@@ -19,8 +19,8 @@ class simple_classifier:
         self.x = tf.placeholder("float", [None, 18], name='features')
         self.y = tf.placeholder("float", shape=(None,2), name='target')
 
-    def preprocess_data(self):
-        with file_io.FileIO('/Users/patricksmith/desktop/creditcard.csv', mode ='r') as f:
+    def preprocess_data(self, train_file):
+        with file_io.FileIO(train_file, mode ='r') as f:
             fraud_data = pd.read_csv(f)
         fraud_data['normAmount'] = StandardScaler().fit_transform(fraud_data['Amount'].values.reshape(-1, 1))
         fraud_data = fraud_data.drop(['Time','Amount','V28','V27','V26','V25','V24','V23','V22','V20','V15','V13','V8'], axis =1)
@@ -42,9 +42,10 @@ class simple_classifier:
         saved_args = locals()
         args_dict = saved_args['kwargs']
         job_dir_type = args_dict['job_dir']
+        train_file = args_dict['train-file']
 
         ## Gather the data
-        x_train, x_test, y_train, y_test = self.preprocess_data()
+        x_train, x_test, y_train, y_test = self.preprocess_data(train_file)
 
         ## The model requires needs a column for each class as input
         y_train = np.array([y_train, -(y_train-1)]).T
@@ -101,7 +102,10 @@ if __name__ == '__main__':
       '--job-dir',
       help='GCS location to write checkpoints and export models'
      )
-
+    parser.add_argument(
+      '--train-file',
+      help='GCS or local paths to training data'
+     )
      args, unknown = parser.parse_known_args()
      c = SimpleClassifier()
      c.train_model(**args.__dict__)
