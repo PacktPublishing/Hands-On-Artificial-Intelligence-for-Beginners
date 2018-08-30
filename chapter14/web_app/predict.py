@@ -1,4 +1,3 @@
-from googleapiclient import errors
 from oauth2client.client import GoogleCredentials
 from googleapiclient import discovery
 ml = discovery.build('ml','v1')
