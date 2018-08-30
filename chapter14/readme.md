@@ -4,7 +4,9 @@ It's becoming increasingly common for data scientists and machine learning engin
 
 ## Code
 
-
+**trainer**: Contains the GCP training files
+**web_app**: Contains a barebones flask framework to query to the GCP REST endpoint
+*chapter14_notebook.ipynb*: Follows along with the chapter in a Jupyter Notebook
 
 ## Datasets
 
