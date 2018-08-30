@@ -1,7 +1,6 @@
-from flask import Flask, request, session, jsonify
-from flask_restful import Api, Resource, reqparse
+from flask import Flask, jsonify
+from flask_restful import Api
 from flask_cors import CORS
-import requests
 from predict import predict
 
 app = Flask(__name__)
