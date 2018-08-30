@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 import os
+import argparse
 
 from tensorflow.python.lib.io import file_io
 from sklearn.metrics import roc_auc_score as auc
@@ -58,8 +59,8 @@ class simple_classifier:
         total_batch = int(len(x_train)/self.batch_size)
 
         ## Create the batches
-        X_batches = np.array_split(x_train, total_batch)
-        Y_batches = np.array_split(y_train, total_batch)
+        x_batches = np.array_split(x_train, total_batch)
+        y_batches = np.array_split(y_train, total_batch)
 
         ## Initialize the model saver
         save_model = os.path.join(job_dir, 'saved_classifier.ckpt')
@@ -70,7 +71,7 @@ class simple_classifier:
             sess.run(init)
             for epoch in range(self.num_epochs):
                 for i in range(total_batch):
-                    batch_x, batch_y = X_batches[i], Y_batches[i]
+                    batch_x, batch_y = y_batches[i], x_batches[i]
                     _, c = sess.run([training_operation, loss], feed_dict={self.x: batch_x, self.y: batch_y})
                 if epoch % self.display == 0:
                     print("Epoch:", '%04d' % (epoch+1),
