@@ -1,6 +1,6 @@
 # Chapter 6: Recurrent Neural Networks
 
-In this chapter, we'll discuss important libraries and frameworks that one needs to get started in Artificial Intelligence (AI). We'll cover the basic functions of the three most popular deep learning frameworks—TensorFlow, PyTorch, and Keras —show you how to get up and running in each of these frameworks, as we will be utilizing them in the following chapters.
+Recurrent neural networks (RNN) are the most flexible form of networks and are widely used in natural language processing (NLP), financial services, and a variety of other fields. Vanilla feedforward networks, as well as their convolutional varieties, accept a fixed input vector and output a fixed vector; they assume that all of your input data is independent of each other. RNNs, on the other hand, operate on sequences of vectors and output sequences of vectors, and allow us to handle many exciting types of data. RNNs are actually turing-complete, in that they can simulate arbitrary tasks, and hence are very appealing models from the perspective of the artificial intelligence scientist. 
 
 ## Code
 
