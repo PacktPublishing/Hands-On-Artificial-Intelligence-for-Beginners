@@ -4,9 +4,9 @@ Recurrent neural networks (RNN) are the most flexible form of networks and are w
 
 ## Code
 
-- *Chapter3.ipynb*: Follows along with the frameworks section
+- *Chapter6.ipynb*: Follows along with the the chapter
 
 ## Datasets
 
-There are no datasets for this chapter
+
 
