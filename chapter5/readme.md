@@ -1,10 +1,12 @@
 # Chapter 5: Convolutional Neural Networks
 
-In this chapter, we'll discuss important libraries and frameworks that one needs to get started in Artificial Intelligence (AI). We'll cover the basic functions of the three most popular deep learning frameworks—TensorFlow, PyTorch, and Keras —show you how to get up and running in each of these frameworks, as we will be utilizing them in the following chapters.
+Convolutional Neural Networks (CNNs), or ConvNets, are a special class of feedforward networks; they are primarily used for computer vision tasks, but have also been adapted to other domains with unstructured data, such as natural language processing. As they are feedforward networks, they are very similar to the simple networks that we just learned about; information passes through them in one direction, and they are made up of layers, weights, and biases. 
+
 ## Code
 
-- *Chapter3.ipynb*: Follows along with the frameworks section
+- *Chapter5.ipynb*: Follows along with the frameworks section
 
 ## Datasets
 
-There are no datasets for this chapter
+- **/data/training**: Contains training data of cats and dogs, segmented into named folders for each 
+- **/data/testing**: Contains the testing data for the network
