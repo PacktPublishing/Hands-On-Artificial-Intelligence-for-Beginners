@@ -4,9 +4,12 @@ Recurrent neural networks (RNN) are the most flexible form of networks and are w
 
 ## Code
 
-- *Chapter6.ipynb*: Follows along with the the chapter
+- *Chapter6.ipynb*: Follows along with the code in the chapter
 
 ## Datasets
 
+The primary dataset can be downloaded from the University of California, Berkley's ML Group [here](https://drive.google.com/file/d/0B5o40yxdA9PqTnJuWGVkcFlqcG8/view)
+
+image_vectors.token contains the corresponding captions for the dataset. 
 
 
