@@ -4,7 +4,7 @@ Convolutional Neural Networks (CNNs), or ConvNets, are a special class of feedfo
 
 ## Code
 
-- *Chapter5.ipynb*: Follows along with the frameworks section
+- *Chapter5.ipynb*: Follows along with the section
 
 ## Datasets
 
