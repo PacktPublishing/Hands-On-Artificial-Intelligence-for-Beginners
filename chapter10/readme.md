@@ -4,7 +4,8 @@ Over the past several years, one of the most notable applications of Artificial 
 
 ## Code
 
-- *Chapter3.ipynb*: Follows along with the frameworks section
+- *TicTacToe*: Contains the code for the TicTacToe scetion
+- *Atari*: Contains the code for the Atari game section
 
 ## Datasets
 
