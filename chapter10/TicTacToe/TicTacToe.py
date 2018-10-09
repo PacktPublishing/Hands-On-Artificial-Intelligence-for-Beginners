@@ -1,3 +1,5 @@
+## Script for playing TicTacToe with UCT. Some parts adapted from @hehehwang
+
 class TicTacToe:
     def __init__(self):
         self.board = list('_' * 9)
