@@ -1,16 +1,20 @@
-# 
+# Hands-On Artificial Intelligence for Beginners
 
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign=9781788991063"><img src="https://www.packtpub.com/sites/default/files/B10120.png" alt="Hands-On Artificial Intelligence for Beginners" height="256px" align="right"></a>
 
-This is the code repository for [](https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
+This is the code repository for [Hands-On Artificial Intelligence for Beginners](https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign=9781788991063), published by Packt.
 
 **An introduction to AI concepts, algorithms, and their implementation**
 
 ## What is this book about?
-0
+Virtual Assistants, such as Alexa and Siri, process our requests, Google's cars have started to read addresses, and Amazon's prices and Netflix's recommended videos are decided by AI. Artificial Intelligence is one of the most exciting technologies and is becoming increasingly significant in the modern world.
 
-This book covers the following exciting features:
-
+This book covers the following exciting features: 
+* Use TensorFlow packages to create AI systems
+* Build feedforward, convolutional, and recurrent neural networks
+* Implement generative models for text generation
+* Build reinforcement learning algorithms to play games
+* Assemble RNNs, CNNs, and decoders to create an intelligent assistant
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788991060) today!
 
@@ -30,12 +34,11 @@ mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
 **Following is what you need for this book:**
 This book is designed for beginners in AI, aspiring AI developers, as well as machine learning enthusiasts with an interest in leveraging various algorithms to build powerful AI applications.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-1).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-13).
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
 | 1-13 | Jupyter Notebook | Windows, Mac OS X, and Linux (Any) |
-
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]().
 
