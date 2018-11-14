@@ -1,22 +1,58 @@
-# Hands-On-Artificial-Intelligence-for-Beginners
-Hands-On Artificial Intelligence for Beginners, published by Packt
+# 
 
-## The Groundwork for AI
-- Chapter 1: A History of AI
-- Chapter 2: Machine Learning Basics
-- Chapter 3: Platforms and Other Essentials
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="" height="256px" align="right"></a>
 
-## AI Methods
-- Chapter 4: Your First Artificial Neural Networks
-- Chapter 5: Convolutional Neural Networks
-- Chapter 6: Recurrent Neural Networks
-- Chapter 7: Generative Models
-- Chapter 8: Reinforcement Learning
+This is the code repository for [](https://www.packtpub.com/big-data-and-business-intelligence/hands-artificial-intelligence-beginners?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
 
-## Applications of AI
-- Chapter 9: Deep Learning for Intelligent Agents
-- Chapter 10: Deep Learning for Game Playing
-- Chapter 11: Deep Learning for Finance
-- Chapter 12: Deep Learning for Robotics
-- Chapter 13: Deploying and Maintaining AI Applications
+**An introduction to AI concepts, algorithms, and their implementation**
+
+## What is this book about?
+0
+
+This book covers the following exciting features:
+
+
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788991060) today!
+
+<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
+alt="https://www.packtpub.com/" border="5" /></a>
+
+## Instructions and Navigations
+All of the code is organized into folders. For example, Chapter02.
+
+The code will look like the following:
+```
+import tensorflow as tf
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
+```
+
+**Following is what you need for this book:**
+This book is designed for beginners in AI, aspiring AI developers, as well as machine learning enthusiasts with an interest in leveraging various algorithms to build powerful AI applications.
+
+With the following software and hardware list you can run all code files present in the book (Chapter 1-1).
+### Software and Hardware List
+| Chapter | Software required | OS required |
+| -------- | ------------------------------------ | ----------------------------------- |
+| 1-13 | Jupyter Notebook | Windows, Mac OS X, and Linux (Any) |
+
+
+We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]().
+
+### Related products
+* Artificial Intelligence with Python [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-python?utm_source=github&utm_medium=repository&utm_campaign=9781786464392 ) [[Amazon]](https://www.amazon.com/dp/178646439X)
+
+* Artificial Intelligence By Example [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-example?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1788990544)
+
+
+## Get to Know the Author
+**Patrick Smith**
+Patrick D Smith is the Data Science Lead for Excella in Arlington, Virginia, where he founded the data science and machine learning team. Prior to Excella, Patrick was the lead instructor for the data science program at General Assembly in Washington, DC, as well as a data scientist with Booz Allen Hamilton's Strategic Innovations Group.
+
+He holds a bachelor's degree from The George Washington University in International Economics, and is currently a part-time masters student in software engineering at Harvard University.
+
+
+### Suggestions and Feedback
+[Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
+
 
