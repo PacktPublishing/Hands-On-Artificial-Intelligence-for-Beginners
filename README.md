@@ -49,8 +49,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 
 ## Get to Know the Author
-**Patrick Smith**
-Patrick D Smith is the Data Science Lead for Excella in Arlington, Virginia, where he founded the data science and machine learning team. Prior to Excella, Patrick was the lead instructor for the data science program at General Assembly in Washington, DC, as well as a data scientist with Booz Allen Hamilton's Strategic Innovations Group.
+**Patrick Smith**is the Data Science Lead for Excella in Arlington, Virginia, where he founded the data science and machine learning team. Prior to Excella, Patrick was the lead instructor for the data science program at General Assembly in Washington, DC, as well as a data scientist with Booz Allen Hamilton's Strategic Innovations Group.
 
 He holds a bachelor's degree from The George Washington University in International Economics, and is currently a part-time masters student in software engineering at Harvard University.
 
